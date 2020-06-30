@@ -21,7 +21,6 @@ import com.lantian.smartpermission.annotation.SmartPermission;
 import com.lantian.smartpermission.bean.SmartPermissionResult;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;

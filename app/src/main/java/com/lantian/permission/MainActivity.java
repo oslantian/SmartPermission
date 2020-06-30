@@ -30,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn3).setOnClickListener((v) -> {
             startActivity(new Intent(this, OtherActivity.class));
         });
+        findViewById(R.id.btn4).setOnClickListener((v) -> {
+            startService(new Intent(this, DownloadService.class));
+        });
+        findViewById(R.id.btn5).setOnClickListener((v) -> {
+            startActivity(new Intent(this, OldActivity.class));
+        });
+        findViewById(R.id.btn6).setOnClickListener((v) -> {
+            startActivity(new Intent(this, OriginalMethodActivity.class));
+        });
     }
 
     @SmartPermission({Manifest.permission.CALL_PHONE,

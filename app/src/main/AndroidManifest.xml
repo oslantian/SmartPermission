@@ -22,6 +22,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".OtherActivity" />
+        <activity android:name=".OldActivity" />
+        <activity android:name=".OriginalMethodActivity" />
+        <service android:name=".DownloadService"/>
     </application>
 
 </manifest>
