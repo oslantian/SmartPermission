@@ -2,7 +2,7 @@
     package="com.lantian.smartpermission" >
     <application>
         <provider
-            android:authorities="com.lantian.smartpermission.provider"
+            android:authorities="${applicationId}.smartpermission.provider"
             android:multiprocess="true"
             android:exported="false"
             android:name=".provider.SmartProvider"/>

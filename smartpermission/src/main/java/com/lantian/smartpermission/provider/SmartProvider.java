@@ -13,7 +13,7 @@ public class SmartProvider extends ContentProvider {
     @Override
     public boolean onCreate() {
         SmartPermissionUtil.getInstance().init((Application) getContext());
-        return false;
+        return true;
     }
 
     @Override
