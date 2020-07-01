@@ -7,17 +7,24 @@
 1. 根` build.gradle`添加
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
+dependencies {
+	classpath 'com.hujiang.aspectjx:gradle-android-plugin-aspectjx:2.0.10'
+}
 ```
 2. app的`build.gradle`添加
 ```
-    dependencies {
-		implementation 'com.github.oslantian:SmartPermission:1.0.0'
-	}
+apply plugin: 'com.android.application'
+apply plugin: 'com.hujiang.android-aspectjx'
+
+
+dependencies {
+	implementation 'com.github.oslantian:SmartPermission:1.0.0'
+}
 ```
 
 ## 使用示例
